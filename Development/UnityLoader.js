@@ -3489,8 +3489,8 @@ Module.expectedDataFileDownloads++;
     } else {
       throw 'using preloaded data can only be done on a web page or in a web worker';
     }
-    var PACKAGE_NAME = 'pumpkin_dance_3.data';
-    var REMOTE_PACKAGE_BASE = 'pumpkin_dance_3.data';
+    var PACKAGE_NAME = 'pumpkin_dance_4.data';
+    var REMOTE_PACKAGE_BASE = 'pumpkin_dance_4.data';
     if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
       Module['locateFile'] = Module['locateFilePackage'];
       Module.printErr('warning: you defined Module.locateFilePackage, that has been renamed to Module.locateFile (using your locateFilePackage for now)');
@@ -3499,8 +3499,8 @@ Module.expectedDataFileDownloads++;
                               Module['locateFile'](REMOTE_PACKAGE_BASE) :
                               ((Module['filePackagePrefixURL'] || '') + REMOTE_PACKAGE_BASE);
   
-      var REMOTE_PACKAGE_SIZE = 3274049;
-      var PACKAGE_UUID = '8a5acac8-0fe5-48ff-8669-8a18d62394b7';
+      var REMOTE_PACKAGE_SIZE = 3274352;
+      var PACKAGE_UUID = '5f1fedf6-e8de-494f-86a3-1754bf6276e4';
     
     function fetchRemotePackage(packageName, packageSize, callback, errback) {
       var xhr = new XMLHttpRequest();
@@ -3604,12 +3604,12 @@ Module['FS_createPath']('/Managed/mono', '2.0', true, true);
       },
     };
 
-      new DataRequest(0, 928390, 0, 0).open('GET', '/data.unity3d');
-    new DataRequest(928390, 928409, 0, 0).open('GET', '/methods_pointedto_by_uievents.xml');
-    new DataRequest(928409, 928612, 0, 0).open('GET', '/preserved_derived_types.xml');
-    new DataRequest(928612, 2371452, 0, 0).open('GET', '/Il2CppData/Metadata/global-metadata.dat');
-    new DataRequest(2371452, 3246424, 0, 0).open('GET', '/Resources/unity_default_resources');
-    new DataRequest(3246424, 3274049, 0, 0).open('GET', '/Managed/mono/2.0/machine.config');
+      new DataRequest(0, 928693, 0, 0).open('GET', '/data.unity3d');
+    new DataRequest(928693, 928712, 0, 0).open('GET', '/methods_pointedto_by_uievents.xml');
+    new DataRequest(928712, 928915, 0, 0).open('GET', '/preserved_derived_types.xml');
+    new DataRequest(928915, 2371755, 0, 0).open('GET', '/Il2CppData/Metadata/global-metadata.dat');
+    new DataRequest(2371755, 3246727, 0, 0).open('GET', '/Resources/unity_default_resources');
+    new DataRequest(3246727, 3274352, 0, 0).open('GET', '/Managed/mono/2.0/machine.config');
 
     function processPackageData(arrayBuffer) {
       Module.finishedDataFileDownloads++;
@@ -3625,10 +3625,10 @@ Module['FS_createPath']('/Managed/mono', '2.0', true, true);
           DataRequest.prototype.requests["/Il2CppData/Metadata/global-metadata.dat"].onload();
           DataRequest.prototype.requests["/Resources/unity_default_resources"].onload();
           DataRequest.prototype.requests["/Managed/mono/2.0/machine.config"].onload();
-          Module['removeRunDependency']('datafile_pumpkin_dance_3.data');
+          Module['removeRunDependency']('datafile_pumpkin_dance_4.data');
 
     };
-    Module['addRunDependency']('datafile_pumpkin_dance_3.data');
+    Module['addRunDependency']('datafile_pumpkin_dance_4.data');
   
     if (!Module.preloadResults) Module.preloadResults = {};
   
